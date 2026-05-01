@@ -397,25 +397,3 @@ The distributed release intentionally preserves the native `S(k)` data without i
 
 ---
 
-## 8. Creating a new encrypted release archive
-
-The maintainer can create a password-protected release archive with:
-
-```bash
-7z a \
-  -t7z \
-  -mhe=on \
-  -p \
-  release/simple-fluid-h5-release-v1.0.0.7z \
-  h5_release/
-```
-
-The option `-mhe=on` encrypts the file names inside the archive as well as the file contents.
-
-The password should be shared through an independent communication channel.
-
----
-
-## 9. Recommended acknowledgement
-
-If results are produced using this dataset, acknowledge the dataset according to the project instructions. If a `CITATION.cff` file is provided, use it as the preferred citation metadata.
